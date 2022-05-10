@@ -2,7 +2,7 @@ use chrono::prelude::*;
 use std::env;
 use std::result::Result::{self, *};
 
-static GIT_PREFIX: [&str; 2] = ["hotfix/", "feature/"];
+static GIT_PREFIX: [&str; 3] = ["hotfix/", "feature/", "chore/"];
 
 fn get_time_string() -> String {
     return Local::now().format("%Y%m%d").to_string();
